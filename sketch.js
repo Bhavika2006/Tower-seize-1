@@ -17,9 +17,9 @@ function setup(){
     engine = Engine.create()
     world = engine.world;
     var options = {
-        density:0.5
+        density:0.2
     }
-    polygon = Bodies.circle(100,200,30,options)
+    polygon = Bodies.circle(100,200,25,options)
     World.add(world,polygon)
     ground = new Ground(500,height,1000,20);
     stand1 = new Ground(390,350,250,10);

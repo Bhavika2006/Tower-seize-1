@@ -15,7 +15,7 @@ class Box{
   }
      display(){
          var angle = this.body.angle;
-         if(this.body.speed>3){
+         if(this.body.speed>7){
             
          
              World.remove(world,this.body)
@@ -25,7 +25,7 @@ class Box{
              pop();
          }
          
-         
+         else{
          push();
          translate(this.body.position.x,this.body.position.y);
          rotate(angle);
@@ -34,5 +34,6 @@ class Box{
          //fill(this.color,this.color1,this.color2)
          rect(0,0,this.width,this.height)
          pop();
+         }
      }
 }
